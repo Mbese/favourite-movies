@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">favorite movies</string>
+    <string name="movie_thumbnail">Movie Thumbnail</string>
+    <string name="text_label_1">Top 5 Movies</string>
+    <string name="text_label_2">Release Date</string>
+    <string name="title">Top 5 Movies</string>
+    <string name="view_error_reload_text">Retry</string>
+    <string name="view_error_text">Something went wrong</string>
+</resources>

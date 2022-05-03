@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="retryDelegate"
+            type="com.example.favoritemovies.view.Actionable" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/medium_grey">
+
+    <ImageView
+        android:id="@+id/view_generic_error_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_generic_error_text"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/default_x2"
+        android:clickable="true"
+        android:contentDescription="@string/view_error_reload_text"
+        android:focusable="true"
+        android:onClick="@{() -> retryDelegate.onRetryAction()}"
+        app:srcCompat="@drawable/ic_baseline_refresh_24" />
+
+    <TextView
+        android:id="@+id/view_generic_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/view_error_text"
+        android:textColor="@color/white"
+        android:onClick="@{() -> retryDelegate.onRetryAction()}"
+        android:textSize="@dimen/medium_text_size" />
+
+    <Button
+        android:id="@+id/view_generic_error_reload_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_generic_error_text"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="@{() -> retryDelegate.onRetryAction()}"
+        android:text="@string/view_error_reload_text"
+        android:layout_marginTop="@dimen/default_x2"
+        android:background="@drawable/selector_primary_button_background"
+        android:textSize="@dimen/medium_text_size" />
+
+</RelativeLayout>
+</layout>

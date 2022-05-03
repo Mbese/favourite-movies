@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/favouriteMoviesByRankingFragment">
+
+    <fragment
+        android:id="@+id/favouriteMoviesByRankingFragment"
+        android:name="com.example.favoritemovies.view.FavouriteMoviesByRankingFragment"
+        android:label="fragment_favourite_movies_by_ranking" />
+    <fragment
+        android:id="@+id/favouriteMovieByReleaseDateFragment"
+        android:name="com.example.favoritemovies.view.FavouriteMovieByReleaseDateFragment"
+        android:label="fragment_favourite_movie_by_release_date"
+        tools:layout="@layout/fragment_favourite_movie_by_release_date" />
+</navigation>

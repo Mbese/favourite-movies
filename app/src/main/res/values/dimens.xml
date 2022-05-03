@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_x2">16dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="medium_text_size">14sp</dimen>
+    <dimen name="larger_text_size">18sp</dimen>
+    <dimen name="rounded_corner_btn_radius">4dp</dimen>
+</resources>
